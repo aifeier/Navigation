@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camara) {
             // Handle the camera action
+            Snackbar.make(getCurrentFocus(),"nav_camara",Snackbar.LENGTH_SHORT).show();
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-
+            Snackbar.make(getCurrentFocus(),"nav_send",Snackbar.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
